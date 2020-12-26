@@ -8,7 +8,7 @@ var Net = require('net');
 
 var wss = new WebSocketServer({port: 8181}); 
 
-var upstream = Net.connect({host: '10.59.97.214', port: 6379}, 
+var upstream = Net.connect({host: '127.0.0.1', port: 6379}, 
     function(){ console.log('Ok, connected to server'); 
 }); 
 var conn = null; 
